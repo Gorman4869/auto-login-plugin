@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 200px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+.account-btn {
+  color: #fff;
+  background-color: #1890ff;
+  border-color: #1890ff;
+  padding: 5px 0;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 5px;
+  transition: all 0.3s ease;
+  width: 150px;
+}
+.account-btn:hover {
+  color: #fff;
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+  transition: all 0.5s ease;
+  transform: scale(1.1, 1.1);
+}
+.account-form {
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  display: none;
+}
+.form-item {
+  margin-top: 10px;
+  position: relative;
+  width: 150px;
+}
+.form-item input {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  outline: none;
+  /* height: 30px; */
+  padding: 6px 0 6px 10px;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 14px;
+  background-color: #ffffff;
+  background-image: none;
+  transition: all 0.2s;
+}
+.form-item label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 12px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.form-item input:focus + label,
+.form-item input:valid + label {
+  top: -2px;
+  font-size: 12px;
+  color: #1890ff;
+  background: white;
+}
+.form-item input:hover {
+  border-color: #4096ff;
+  border-inline-end-width: 1px;
+}
+.form-item input:focus {
+  border-color: #4096ff;
+  box-shadow: 0 0 0 2px rgba(5, 145, 255, 0.1);
+  border-inline-end-width: 1px;
+  outline: 0;
+}
+.footer {
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.confirm-btn-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.confirm-btn-wrap > .account-btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  width: 60px;
+}
+
+.cancel-btn {
+  background-color: white;
+  color: #40a9ff;
+  border: 1px solid #40a9ff;
+  outline: none;
+}
+.cancel-btn:hover {
+  color: #40a9ff;
+  background-color: #f5f5f5;
+}
+.account-area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.account-area-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.account-area-btn {
+  width: 140px;
+  padding: 5px 10px;
+  background-color: rgb(135, 208, 104);
+}
+.account-area-btn:hover {
+  background-color: rgb(135, 208, 104);
+}
+.account-area-icon {
+  font-size: 18px;
+  cursor: pointer;
+}
+.account-area-icon:hover {
+  transition: all 0.5s ease;
+  transform: scale(1.1, 1.1);
+}
